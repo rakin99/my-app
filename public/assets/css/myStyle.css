@@ -1,0 +1,42 @@
+@import "style.css";
+
+#loggedIn:hover .user-menu {
+  display: block;
+}
+
+#loggedIn:hover .invisible {
+  display: block;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 460px;
+}
+
+.close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 15px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
